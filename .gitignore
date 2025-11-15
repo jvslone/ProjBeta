@@ -1,0 +1,11 @@
+#Ignore Cache
+__pycache__/
+*.pyc
+
+
+#Ignore Database Files
+*.csv
+*.pickle
+*.pkl
+*.pt
+*.dat

@@ -1,0 +1,15 @@
+v1 - 4090.71s
+Naive Implementation
+
+
+v2 - 553.36s
+Changed Pareto Archive to not compute front size from scratch each time
+Optimized dict_from_vector by having it place the entire tensor on the cpu and then loop through the parameters
+Removed build_case
+Truly vectorize build_batch, made pytorch PChip
+
+v3 -
+Added minimum core density ~2e20
+Increased exploration for first 10 rounds
+Added nudge away from edge
+Added metric for std of last 5% of final rho points
